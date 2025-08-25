@@ -3,35 +3,20 @@
     <h1>Slider</h1>
     <div>
       <label for="slider">Select a value:</label>
-      <input
-        id="slider"
-        type="range"
-        min="0"
-        max="100"
-        v-model="sliderValue"
-      />
+      <input id="slider" type="range" min="0" max="100" v-model="sliderValue" />
       <span>{{ sliderValue }}</span>
     </div>
     <div>
       <strong>Final value:</strong>
       <span>{{ weirdValue }}</span>
-      
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { useValStore } from '@/stores/valStore'
+import { storeToRefs } from 'pinia'
 
-const sliderValue = ref(50)
-const weirdValue = computed(() => ((sliderValue.value * 2) / 3).toFixed(2))
+const weirdStore = useValStore()
+const { sliderValue, weirdValue } = storeToRefs(weirdStore)
 </script>
-
-<style>
-.about {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-</style>

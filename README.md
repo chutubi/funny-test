@@ -10,3 +10,10 @@ This template should help get you started developing with Vue 3 in Vite.
 - **CheckboxView**: Try to select a checkbox, and more options keep appearing, making it a challenge to pick just one. This component is designed to surprise and entertain users with its ever-growing list.
 
 The project is a lighthearted demonstration of interactive UI elements and creative logic, perfect for learning and having fun with Vue 3.
+
+> This project showcases both major Vue 3 component styles:
+>
+> - **SliderView** uses the Composition API for state and logic.
+> - **CheckboxView** is implemented with the classic Options API.
+>
+> Also it has pinia store management integrated in **SliderView**

@@ -1,3 +1,12 @@
+<template>
+  <div class="greetings">
+    <h1 class="green">{{ msg }}</h1>
+    <h3>
+      You’ve accesed a funny project with vue
+    </h3>
+  </div>
+</template>
+
 <script setup>
 defineProps({
   msg: {
@@ -6,16 +15,6 @@ defineProps({
   },
 })
 </script>
-
-<template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve accesed a project with vue
-
-    </h3>
-  </div>
-</template>
 
 <style scoped>
 h1 {
@@ -35,6 +34,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;

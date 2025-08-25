@@ -1,4 +1,11 @@
 @import './base.css';
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 #app {
   max-width: 1280px;
