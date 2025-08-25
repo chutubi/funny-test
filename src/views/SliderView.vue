@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { useValStore } from '@/stores/valStore'
+import { useValStore } from '../stores/valStore'
 import { storeToRefs } from 'pinia'
 
 const weirdStore = useValStore()
